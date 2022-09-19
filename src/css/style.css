@@ -1,0 +1,373 @@
+header {
+    height: 43.8px;
+    width: 100%;
+    background-color: #00447E;
+}
+
+a {
+    color: #fff;
+    font-size: 0.875em;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+a,
+h1,
+h2 {
+    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+
+.card__title span,
+.congratulation__text {
+    font-weight: bold;
+}
+
+.header__container {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__link__container {
+    width: 40%;
+    margin-left: 80px;
+}
+
+.header__link__title {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header__link__email {
+    margin-right: 15px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}
+
+/* Section congratulation */
+.congratulation {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.congratulation__title {
+    font-size: 3.125em;
+    color: #00447E;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.congratulation__text {
+    font-size: 1.125em;
+}
+
+/* Section card */
+.card {
+    background-color: #00447E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* min-width: 550px; */
+    height: 800px;
+}
+
+.card__container {
+    width: 300px;
+    height: 62%;
+    border: #00447E 1px solid;
+    border-radius: 10px;
+    background: rgb(6, 147, 227);
+    background: linear-gradient(200deg, rgba(6, 147, 227, 1) 22%, rgba(142, 209, 252, 1) 52%, rgba(255, 255, 255, 1) 75%);
+    box-shadow: 2px 2px 10px #000;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card__image {
+    width: 135px;
+    height: 135px;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.card__logo {
+    width: 100px;
+    height: 100px;
+}
+
+.card__title {
+    font-size: 1em;
+    margin-bottom: 50px;
+    width: 80%;
+    margin-left: 35px;
+}
+
+.card__title__name {
+    margin-bottom: 10px;
+}
+
+/* Section comment */
+.comment {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment__container {
+    width: 85%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.comment__1,
+.comment__2 {
+    width: 45%;
+    height: 100%;
+    border: #00447E 1px solid;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.comment__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    color: #00447E;
+}
+
+.comment__image {
+    width: 6.25em;
+    height: 6.25em;
+    border-radius: 50px;
+}
+
+.comment__text {
+    width: 90%;
+    margin-left: 30px;
+    font-weight: 1em;
+    text-align: justify;
+    line-height: 25px;
+}
+
+@media (max-width: 1130px) {
+    .comment__container {
+        width: 90%;
+        height: 80%;
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 920px) {
+    .comment__container {
+        width: 80%;
+        height: 95%;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .comment__1,
+    .comment__2 {
+        width: 100%;
+        height: 90%;
+        margin-top: 30px;
+    }
+
+    .comment__image { 
+        width: 6.25em;
+        height: 6.25em;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 780px) {
+    .header__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .header__link__container {
+        margin-left: 0px;
+    }
+
+    .comment__container {
+        width: 80%;
+        height: 90%;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .comment__image { 
+        width: 5em;
+        height: 5em;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 525px) {
+    .header__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .header__link__container {
+        margin-left: 0px;
+    }
+
+    .comment__container {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .comment__image { 
+        width: 5em;
+        height: 5em;
+        margin-top: 10px;
+    }
+
+    .comment__1,
+    .comment__2 {
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 460px) {
+    .congratulation__text {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .header__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .header__link__container {
+        margin-left: 0px;
+    }
+
+    .comment__container {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .comment__image { 
+        width: 4em;
+        height: 4em;
+        margin-top: 10px;
+    }
+
+    .comment__1,
+    .comment__2 {
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 398px) {
+    .header__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .header__link__container {
+        margin-left: 0px;
+    }
+
+    .comment__container {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .comment__image { 
+        width: 3em;
+        height: 3em;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 356px) {
+    .header__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .header__link__container {
+        margin-left: 0px;
+    }
+
+    .comment__container {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .comment__image { 
+        width: 2em;
+        height: 2em;
+        margin-top: 10px;
+    }
+
+}
+
